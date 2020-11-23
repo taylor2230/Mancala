@@ -1,0 +1,133 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-size: 20px;
+    font-family: Menlo;
+    font-weight: 100;
+}
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.Mancala {
+    display: flex;
+    flex-flow: column;
+    min-height: 300px;
+    height: 400px;
+    background:#000008;
+}
+
+.game-information > *{
+    color: white;
+    font-weight: 100;
+}
+
+
+.game-controls {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+}
+.game-controls > form {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    border: none;
+    min-height: 50px;
+    text-align: center;
+    background: white;
+    border: 1px solid red;
+}
+
+.button:hover {
+    color: white;
+    background: red;
+}
+.game-area {
+    display: flex;
+    flex-flow: row;
+    justify-content: left;
+    align-items: left;
+    height: 100%;
+    width: 100%;
+    background: #477148;
+    border: 1px solid red;
+}
+
+.store {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    word-break: break-word;
+    background: white;
+    border-radius: 50%;
+    min-width: 100px;
+}
+
+.play-area {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.row:nth-of-type(1) {
+    flex-flow: row-reverse;
+}
+
+.row:nth-of-type(2) {
+    flex-flow: row;
+}
+
+.row > form {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.a, .b {
+    color: black;
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border: none;
+    border-radius: 50%;
+}
+
+.a-disabled, .b-disabled {
+    color: black;
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 228, 228);
+    border: none;
+    border-radius: 50%;    
+}
+
+.a:hover, .b:hover  {
+    background: #fffbeb;
+}
+
+.error {
+    color: red;
+}
